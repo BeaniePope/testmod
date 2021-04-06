@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "testmod",
+  "version": "${version}",
+  "name": "Testmod",
+  "description": "t e s t",
+  "authors": [
+    "BeaniePope"
+  ],
+  "contact": {
+    "repo": "https://github.com/BeaniePope/testmod.git"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/testing/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.github.beaniepope.testmod.client.TestModClient"
+    ],
+    "main": [
+      "com.github.beaniepope.testmod.client.TestModClient"
+    ]
+  },
+  "mixins": [
+    "testmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
